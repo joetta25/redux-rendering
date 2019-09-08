@@ -7,3 +7,6 @@ dispatch({ type: null }); // Here we're making a call to dispatch() - this trigg
 
 // Write DOM event listeners here, make them dispatch actions to the Redux store 
 
+const addCircle = document.getElementById('addCircle');
+
+addCircle.addEventListener('click', e=> dispatch ({ type: 'ADD_NEW_Circle'}));
